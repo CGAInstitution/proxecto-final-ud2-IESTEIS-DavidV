@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Duration <= 524.5\ngini = 0.2\nsamples = 41188\nvalue = [36548, 4640]", fillcolor="#e89152"] ;
+1 [label="Previous <= 1.5\ngini = 0.133\nsamples = 36674\nvalue = [34043, 2631]", fillcolor="#e78b48"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Duration <= 205.5\ngini = 0.116\nsamples = 35751\nvalue = [33548, 2203]", fillcolor="#e78946"] ;
+1 -> 2 ;
+3 [label="gini = 0.054\nsamples = 22789\nvalue = [22156, 633]", fillcolor="#e6853f"] ;
+2 -> 3 ;
+4 [label="gini = 0.213\nsamples = 12962\nvalue = [11392, 1570]", fillcolor="#e99254"] ;
+2 -> 4 ;
+5 [label="Duration <= 146.5\ngini = 0.497\nsamples = 923\nvalue = [495, 428]", fillcolor="#fbeee4"] ;
+1 -> 5 ;
+6 [label="gini = 0.205\nsamples = 268\nvalue = [237, 31]", fillcolor="#e89153"] ;
+5 -> 6 ;
+7 [label="gini = 0.477\nsamples = 655\nvalue = [258, 397]", fillcolor="#baddf6"] ;
+5 -> 7 ;
+8 [label="Duration <= 835.5\ngini = 0.494\nsamples = 4514\nvalue = [2505, 2009]", fillcolor="#fae6d8"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Previous <= 0.5\ngini = 0.465\nsamples = 2948\nvalue = [1863, 1085]", fillcolor="#f4caac"] ;
+8 -> 9 ;
+10 [label="gini = 0.449\nsamples = 2540\nvalue = [1677, 863]", fillcolor="#f2c29f"] ;
+9 -> 10 ;
+11 [label="gini = 0.496\nsamples = 408\nvalue = [186, 222]", fillcolor="#dfeffb"] ;
+9 -> 11 ;
+12 [label="Previous <= 1.5\ngini = 0.484\nsamples = 1566\nvalue = [642, 924]", fillcolor="#c3e1f7"] ;
+8 -> 12 ;
+13 [label="gini = 0.486\nsamples = 1523\nvalue = [632, 891]", fillcolor="#c5e3f7"] ;
+12 -> 13 ;
+14 [label="gini = 0.357\nsamples = 43\nvalue = [10, 33]", fillcolor="#75bbed"] ;
+12 -> 14 ;
+}
